@@ -1,0 +1,7 @@
+[program:service-sparc_gae]
+command= ${buildout:directory}/bin/python ${buildout:ae-sdk-location}/dev_appserver.py ${buildout:directory}/parts/sparc_gae/ --port ${service-sparc_gae:port} --admin_port ${service-sparc_gae:admin_port} --api_port ${service-sparc_gae:api_port} --skip_sdk_update_check
+process_name = service-sparc_gae
+directory = ${buildout:directory}/parts/sparc_gae
+priority = 10
+redirect_stderr = true
+stdout_logfile = ${buildout:supervisor-log-dir}/service-sparc_gae.log
