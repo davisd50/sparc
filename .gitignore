@@ -61,6 +61,7 @@ target/
 .pydevproject
 
 # Buildout Directories and files
+bootstrap.py
 bin/
 conf/
 etc/
