@@ -59,6 +59,7 @@ target/
 # Eclipse Files
 .project
 .pydevproject
+.settings
 
 # Buildout Directories and files
 bootstrap.py
